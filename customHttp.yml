@@ -3,6 +3,10 @@ customHeaders:
     headers:
     - key: 'x-custom-header'
       value: 'yeah'
+    - key: 'cache-control'
+      value: 'max-age=20'
+    - key: 'test-custom-header-png'
+      value: 'its-working-png'
   - pattern: '**.png'
     headers:
     - key: 'cache-control'
