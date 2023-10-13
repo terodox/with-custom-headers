@@ -1,9 +1,9 @@
 customHeaders:
-  - pattern: '/_next/image'
+  - pattern: '**/_next/image'
     headers:
     - key: 'x-custom-header'
       value: 'yeah'
-  - pattern: '*.png'
+  - pattern: '**.png'
     headers:
     - key: 'cache-control'
       value: 'max-age=5, stale-while-revalidate'
